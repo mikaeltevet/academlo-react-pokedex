@@ -1,0 +1,238 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.25rem;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --primary-color: snow;
+  --text-color: lightcoral;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.dark-mode {
+  margin: 0;
+  padding: 0;
+  --primary-color: midnightblue;
+  --text-color: snow;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 2.5rem;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: steelblue;
+  font-weight: 500;
+}
+
+a {
+  font-weight: 500;
+  color: lightcoral;
+  text-decoration: inherit;
+}
+a:hover {
+  color: lightcoral;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--text-color);
+  cursor: pointer;
+}
+button:hover {
+  border-color: transparent;
+  font-style: italic;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button:disabled {
+  opacity: 0.5;
+  color: var(--primary-color);
+}
+
+.pokedex {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.welcome {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.hey {
+  position: relative;
+  padding: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 1rem;
+  width: 90vw;
+  margin: auto;
+}
+
+.card-info h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.card-info p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.elements-per-page, .type-filter {
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+  margin: 2.5rem 0;
+  padding: 0;
+}
+
+.logo {
+  position: relative;
+  width: 500px;
+  margin: 2rem 0 0 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  height: 100%;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.33);
+}
+
+.card-img {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  border-radius: 25px 0 0 25px;
+  height: 100%;
+  width: 33%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-info {
+  text-align: left;
+  margin-left: 1.25rem;
+  width: 67%;
+  color: snow;
+}
+
+.pagination {
+  width: 100%;
+  margin: 3rem auto 0;
+}
+
+.normal {
+  background-color: #A8A878;
+}
+
+.fighting {
+  background-color: #C03028;
+}
+
+.flying {
+  background-color: #A890F0;
+}
+
+.poison {
+  background-color: #A040A0;
+}
+
+.ground {
+  background-color: #E0C068;
+}
+
+.rock {
+  background-color: #B8A038;
+}
+
+.bug {
+  background-color: #A8B820;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.steel {
+  background-color: #B8B8D0;
+}
+
+.fire {
+  background-color: #F08030;
+}
+
+.water {
+  background-color: #6890F0;
+}
+
+.grass {
+  background-color: #78C850;
+}
+
+.electric {
+  background-color: #F8D030;
+}
+
+.psychic {
+  background-color: #F85888;
+}
+
+.ice {
+  background-color: #98D8D8;
+}
+
+.dragon {
+  background-color: #7038F8;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.fairy {
+  background-color: #EE99AC;
+}
